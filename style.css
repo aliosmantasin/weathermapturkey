@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e8e8e8;
+  align-items: center;
+}
+
+.inclusiveWheather {
+  position: relative;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  margin: auto;
+}
+
+
+.inclusiveWheather ::placeholder {
+  color: #4865b5;
+}
+
+.search-area {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.search {
+    justify-content: center;
+ 
+}
+
+.search input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #b9b9b9;
+    color: #4865b5;
+}
+
+
+.search-area svg {
+  fill: #4865b5;
+  cursor: pointer;
+  transform: scale(1);
+	animation: pulse 2s infinite;
+   
+}
+
+.citiesOfTurkey .cls-1 {
+  fill: #4865b5;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0.5px;
+  cursor: pointer;
+}
+
+.citiesOfTurkey .cls-1:hover {
+  fill: #6384dd;
+  transition: 0.4s;
+}
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.65);
+	
+	}
+
+	70% {
+		transform: scale(1);
+		
+	}
+
+	100% {
+		transform: scale(0.95);
+		
+	}
+}
+
+
+.selected-city {
+  fill: #acbff4 !important;
+}
+
+.cityHead {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.weatherInfoIclusive {
+  justify-content: center;
+  align-items: center;
+}
+
+#weatherInfo {
+  display: flex;
+  justify-content: center;
+}
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px; 
+  margin-bottom: 0;
+  display: none;
+}
+
+.cartInclusive {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+
+
+.cart {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 0 4px 10px 4px;
+}
+
+.cart p{
+  margin: auto;
+}
+
+.cart i{
+  color: #f00d0d;
+} 
+.cart:nth-child(3) i{
+  color: #4865b5;
+}
+
+
+.forCast {
+  margin-bottom: 3rem;
+}
+
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    padding: 10px;
+    text-align: center;
+}
+
+.slide img {
+    width: 50px;
+}
+
+.sliderContent {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+.slider-item {
+    min-width: 300px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: rgb(209, 226, 229);
+ 
+}
+
+.slider-item img {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+
+#loadingMessage {
+  display: none; /* Başlangıçta gizli olacak */
+  text-align: center;
+  font-size: 1.5rem;
+  color: #4865b5;
+}
