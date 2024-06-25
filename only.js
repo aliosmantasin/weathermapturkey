@@ -9,6 +9,7 @@
         }
 
         const loadingMessage = document.getElementById('loadingMessage');
+        loadingMessage.innerHTML = `<p>Veriler yükleniyor...</p>`;
         loadingMessage.style.display = 'block'; 
         
         //City Value 
