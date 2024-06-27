@@ -42,7 +42,7 @@
             console.error('Mevcut forecast hava durumu verileri alınırken hata oluştu', error);
         }
 
-        loadingMessage.style.display = 'none'; // Yükleniyor mesajını gizle
+        loadingMessage.style.display = 'none'; 
         
     }
 
@@ -87,6 +87,7 @@
     
     const cityArea = document.querySelectorAll('.cls-1');
     
+    //Data-name göre tıklama gerçekleşince veriler gelir
     cityArea.forEach(city => {
         city.addEventListener('click', () => {
             let cityName = city.getAttribute('data-name');
@@ -102,7 +103,7 @@
         });
     });
     
-    //
+    //Color
     function changeCityColor(cityName) {
         const cityAreas = document.querySelectorAll('.cls-1');
         cityAreas.forEach(city => {
